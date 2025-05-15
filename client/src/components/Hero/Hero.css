@@ -1,0 +1,37 @@
+/* Hero styling section */
+.hero {
+  background-image: url('../../assets/ChatGPT\ Image\ May\ 9\,\ 2025\ at\ 04_27_01\ PM.png'); /* Path to the image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 70vh; /* Makes the hero section full screen */
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  justify-content: space-between; /* Pushes content to the sides */
+  color: var(--color-black); /* Ensures text is readable on the background */
+}
+
+.hero-content {
+  display: flex;
+  width: 100%; /* Ensures the content spans the full width */
+}
+
+.hero-logo {
+  flex: 1; /* Take up space on the left */
+  text-align: left; /* Align text to the left */
+  padding: 0 40px; /* Add padding to the left and right of the text */
+  max-width: 50vw; /* Limit the text side to 50% of the viewport width */
+}
+
+.hero-featured-products {
+  flex: 1; /* Take up space on the right */
+  text-align: right; /* Align content to the right */
+  width: 50vw; /* Set the photo side to 50% of the viewport width */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.hero-featured-products .row {
+  justify-content: flex-end; /* Align the row content to the right */
+}

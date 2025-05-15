@@ -1,0 +1,28 @@
+/* Nav-bar stying */
+/* Add padding to the sides of the navbar */
+.navbar.navbar-dark.bg-dark {
+  padding: 8px 20px;
+}
+
+/* Fix the navbar at the top */
+.navbar.navbar-dark.bg-dark {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  background-color: var(--color-black); /* Set the background color */
+}
+/* Center the navbar links */
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add padding between the custom order button and the shopping cart */
+.navbar > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
