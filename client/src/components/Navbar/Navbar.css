@@ -1,8 +1,10 @@
 /* Nav-bar stying */
 /* Add padding to the sides of the navbar */
-.navbar.navbar-dark.bg-dark {
-  padding: 8px 20px;
+.navbar.bg-dark {
+  background-color: #111 !important; /* or use #000 for pure black */
+  
 }
+
 
 /* Fix the navbar at the top */
 .navbar.navbar-dark.bg-dark {
@@ -12,6 +14,18 @@
   z-index: 1030; /* Ensure it stays above other elements */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   background-color: var(--color-black); /* Set the background color */
+  padding: 10px 20px; /* Add padding to the navbar */
+  display: flex;
+  justify-content: space-between; /* Space between brand and links */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Add space between items */
+  margin: 0 auto; /* Center the navbar */
+  width: 100%; /* Optional: Set a max width for the navbar */
+  left: 50%;
+  transform: translateX(-50%); /* Center the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 /* Center the navbar links */
 .navbar-nav {

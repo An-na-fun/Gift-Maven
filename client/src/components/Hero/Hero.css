@@ -35,3 +35,30 @@
 .hero-featured-products .row {
   justify-content: flex-end; /* Align the row content to the right */
 }
+
+.btn-primary {
+  background-color: var(--color-black); /* Set the button background color */
+  color: var(--color-white); /* Set the button text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border-radius: 5px; /* Round the corners of the button */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Set font size for the button */
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark); /* Darken the button on hover */
+  color: var(--color-black); /* Ensure text remains white on hover */
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  .hero-logo,
+  .hero-featured-products {
+    width: 100%; /* Make both sections full width */
+    text-align: center; /* Center text for smaller screens */
+    padding: 20px; /* Add padding for smaller screens */
+  }
+}
+/* Additional styles for the logo and featured products */  

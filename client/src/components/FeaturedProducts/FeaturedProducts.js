@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import "./FeaturedProducts.css";
 function FeaturedProducts() {
@@ -24,7 +25,6 @@ function FeaturedProducts() {
             <a href={`/products/${product.id}`} key={product.id} className="product-card">
               <img src={product.image} alt={product.name} width={150} />
               <h4>{product.name}</h4>
-              <p>{product.description}</p>
               <p>${product.price.toFixed(2)}</p>
             </a>
           ))}

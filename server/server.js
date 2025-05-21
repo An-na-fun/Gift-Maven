@@ -20,10 +20,7 @@ app.get('/', (req, res) => {
   res.send('Gift-Maven server is running!');
 });
 
-app.use((req, res, next) => {
-  console.log(`Incoming: ${req.method} ${req.url}`);
-  next();
-});
+
 
 
 // Start the server
@@ -42,7 +39,7 @@ app.get('/api/products', (req, res) => {
 
 // API endpoint to get featured products (e.g., first 4)
 app.get('/api/featured-products', (req, res) => {
-  const featured = products.slice(0, 12); // Adjust as needed
+  const featured = products.slice(0, 6); // Adjust as needed
   res.json(featured);
 });
 
@@ -62,4 +59,10 @@ app.get('/api/products/:id', (req, res) => {
 app.use((req, res, next) => {
   console.log(`Incoming request: ${req.method} ${req.url}`);
   next();
+});
+
+// API endpoint to get categories
+const categories = require('./data/categories.js'); // Add this line
+app.get('/api/categories', (req, res) => {
+  res.json(categories);
 });
